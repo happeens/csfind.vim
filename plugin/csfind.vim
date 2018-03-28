@@ -29,9 +29,7 @@ fun! s:getQuery()
     call inputsave()
     let l:query = input('find: ')
     call inputrestore()
-    if strlen(l:query) > 0
-        return l:query
-    endif
+    return l:query
 endfun
 
 fun! s:run(query)
